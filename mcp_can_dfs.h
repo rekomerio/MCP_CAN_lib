@@ -279,6 +279,10 @@
 #define MCP_8MHz_80kBPS_CFG2 (0xD3)    /* Enabled SAM bit     */
 #define MCP_8MHz_80kBPS_CFG3 (0x81)    /* Sample point at 75% */
 
+#define MCP_8MHz_47kBPS_CFG1 (0x83)    /* Increased SJW       */
+#define MCP_8MHz_47kBPS_CFG2 (0xBE)    /* Enabled SAM bit     */
+#define MCP_8MHz_47kBPS_CFG3 (0x04)    /* Sample point at 76.19% */
+
 #define MCP_8MHz_50kBPS_CFG1 (0x84)    /* Increased SJW       */
 #define MCP_8MHz_50kBPS_CFG2 (0xE5)    /* Enabled SAM bit     */
 #define MCP_8MHz_50kBPS_CFG3 (0x83)    /* Sample point at 75% */
@@ -454,14 +458,15 @@
 #define CAN_31K25BPS 4
 #define CAN_33K3BPS  5
 #define CAN_40KBPS   6
-#define CAN_50KBPS   7
-#define CAN_80KBPS   8
-#define CAN_100KBPS  9
-#define CAN_125KBPS  10
-#define CAN_200KBPS  11
-#define CAN_250KBPS  12
-#define CAN_500KBPS  13
-#define CAN_1000KBPS 14
+#define CAN_47KBPS   7
+#define CAN_50KBPS   8
+#define CAN_80KBPS   9
+#define CAN_100KBPS  10
+#define CAN_125KBPS  11
+#define CAN_200KBPS  12
+#define CAN_250KBPS  13
+#define CAN_500KBPS  14
+#define CAN_1000KBPS 15
 
 #define CAN_OK             (0)
 #define CAN_FAILINIT       (1)
